@@ -13,9 +13,10 @@ header h2 {
 
 footer {
   p { 
-    display: none; 
+    visibility: hidden;
   }
-  .octocat { 
-    margin-top: 4px; 
+  
+  span.octocat { 
+    margin-top: -28px;
   }
 }
