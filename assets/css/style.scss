@@ -3,15 +3,15 @@
 
 @import "{{ site.theme }}";
 
-#forkme_banner {
+a#forkme_banner {
   display: none;
 }
 
-.ribbon-inner {
-  h2 {
-    padding-top: 5px;
-  }
-}
+// .ribbon-inner {
+//   h2 {
+//     padding-top: 5px;
+//   }
+// }
 
 // footer {
 //   p { display: none; }
