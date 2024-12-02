@@ -1,11 +1,8 @@
-# Phillip "Jake" Johnson
-Welcome to my personal portfolio!
-
 ## About Me
 I am Jake
 
 ## Skills
-- Rai;s
+- Rails
 
 ## Contact
-You can reach me at [LinkedIn](https://www.linkedin.com/ofalltrades) or [GitHub](https://github.com/ofalltrades).
+You can reach me at [LinkedIn](https://www.linkedin.com/in/ofalltrades) or [GitHub](https://github.com/ofalltrades).
