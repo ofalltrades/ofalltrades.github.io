@@ -1,9 +1,8 @@
-remote_theme: pages-themes/merlot@v0.2.0
 plugins:
 title: Jake Johnson
 description: Personal Portfolio of Phillip "Jake" Johnson
 show_downloads: false
 google_analytics:
 github:
-  # repository_url: http://example.com/download.zip
-  # another_url: another 
+repository_url:
+another_url:
