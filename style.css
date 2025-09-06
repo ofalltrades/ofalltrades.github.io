@@ -1,6 +1,95 @@
 body {
-  background-color: lightblue;
+  background: #006186;
+  color: aliceblue;
+  font-family: "Share Tech Mono", monospace;
+  margin-top: 0;
 }
-h1 {
-  color: navy;
+.navbar {
+  width: 100%;
+  text-align: right;
+  position: fixed;
+  /* text-shadow: 2px 2px 5px black; */
+  text-shadow: 1px 1px 1px rgb(40, 40, 40);
+}
+.links ul {
+  list-style-type: none;
+  padding: 16px 10px 0 10px;
+  float: left;
+  margin-top: 0;
+}
+.github-icon,
+.linkedin-icon {
+  width: 2rem;
+  color: aliceblue;
+}
+.navlist {
+  list-style-type: none;
+  padding: 10px 25px 10px 35px;
+}
+.navlist li {
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+.navlist a {
+  text-decoration: none;
+  font-size: 18px;
+  color: aliceblue;
+}
+.navlist .resume-link-border {
+  font-size: 20px;
+  color: aliceblue;
+}
+.navlist .resume-link {
+  color: #36454f;
+  margin-left: 26px;
+  margin-right: 40px;
+}
+.content {
+  padding: 175px 15% 0 15%;
+}
+#about {
+  border: 1px solid aliceblue;
+  height: 520px;
+  padding: 12px;
+  border-radius: 1%;
+  margin-bottom: 500px;
+}
+#about p {
+  display: inline;
+}
+.intro-text {
+  width: 44%;
+  padding: 5%;
+}
+#about img {
+  float: right;
+}
+.profile-pic {
+  max-width: 350px;
+  padding: 30px;
+  padding-right: 0;
+  border-radius: 25%;
+  margin-top: -37px;
+}
+#experience {
+  border: 1px solid aliceblue;
+  height: 500px;
+  padding: 12px;
+  border-radius: 1%;
+  margin-bottom: 500px;
+}
+
+#projects {
+  border: 1px solid aliceblue;
+  height: 500px;
+  padding: 12px;
+  border-radius: 1%;
+  margin-bottom: 500px;
+}
+#projects a {
+  text-decoration: none;
+  color: aqua;
+}
+.project-description {
+  margin-left: 20px;
 }
