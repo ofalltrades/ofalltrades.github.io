@@ -60,7 +60,8 @@ body {
 #about {
   border: 1px solid aliceblue;
   display: flex;
-  /* height: 100%; */
+  flex-direction: row;
+  height: 100%;
   padding: 12px;
   border-radius: 1%;
   margin-bottom: 500px;
@@ -82,8 +83,6 @@ body {
   max-width: 350px;
   max-height: 350px;
   padding: 30px;
-  padding-right: 0;
-  margin-top: 81px;
   border-radius: 25%;
 }
 
