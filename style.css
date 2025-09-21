@@ -49,7 +49,8 @@ body {
 }
 #about {
   border: 1px solid aliceblue;
-  height: 520px;
+  display: flex;
+  /* height: 100%; */
   padding: 12px;
   border-radius: 1%;
   margin-bottom: 500px;
@@ -61,35 +62,40 @@ body {
   width: 44%;
   padding: 5%;
 }
+
 #about img {
-  float: right;
 }
+
 .profile-pic {
   max-width: 350px;
+  max-height: 350px;
   padding: 30px;
   padding-right: 0;
+  margin-top: 81px;
   border-radius: 25%;
-  margin-top: -37px;
 }
-#experience {
+
+#experience,
+#projects {
   border: 1px solid aliceblue;
-  height: 500px;
+  height: 100%;
   padding: 12px;
   border-radius: 1%;
   margin-bottom: 500px;
 }
 
-#projects {
-  border: 1px solid aliceblue;
-  height: 500px;
-  padding: 12px;
-  border-radius: 1%;
-  margin-bottom: 500px;
-}
-#projects a {
+#projects a,
+#about a {
   text-decoration: none;
   color: aqua;
 }
-.project-description {
+
+#projects h2,
+#experience h2 {
+  margin-top: 0;
+}
+
+.project-description,
+.experience-description {
   margin-left: 20px;
 }
