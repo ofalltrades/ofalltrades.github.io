@@ -1,23 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #006186;
-  color: aliceblue;
+  color: #edf9ff;
   font-family: "Share Tech Mono", monospace;
-  margin-top: 0;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .navbar {
+  align-items: center;
+  background: transparent;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  text-align: right;
   position: fixed;
-  /* text-shadow: 2px 2px 5px black; */
-  text-shadow: 1px 1px 1px rgb(40, 40, 40);
+  top: 0;
+  z-index: 10;
 }
 
 .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  left: 12px;
   list-style-type: none;
-  padding: 16px 10px 0 10px;
-  float: left;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 11px;
 }
 
 .github-icon,
@@ -28,7 +42,8 @@ body {
 
 .navlist {
   list-style-type: none;
-  padding: 10px 25px 10px 35px;
+  margin: 0;
+  padding: 15px 24px;
 }
 
 .navlist li {
@@ -37,9 +52,10 @@ body {
 }
 
 .navlist a {
-  text-decoration: none;
+  color: #edf9ff;
   font-size: 18px;
-  color: aliceblue;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 38, 57, 0.32);
 }
 
 .navlist .resume-link-border {
@@ -54,17 +70,21 @@ body {
 }
 
 .content {
-  padding: 175px 15% 0 15%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 128px 32px 80px;
 }
 
 #about {
-  border: 1px solid aliceblue;
+  align-items: center;
+  background: #006186;
+  border: 1px solid rgba(218, 247, 255, 0.6);
   display: flex;
   flex-direction: row;
-  height: 100%;
-  padding: 12px;
-  border-radius: 1%;
-  margin-bottom: 500px;
+  gap: 24px;
+  padding: 48px;
+  border-radius: 18px;
+  margin-bottom: 112px;
 }
 
 #about p {
@@ -72,31 +92,174 @@ body {
 }
 
 .intro-text {
-  width: 44%;
-  padding: 5%;
+  flex: 1;
 }
 
-#about img {
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
 }
 
 .profile-pic {
-  max-width: 350px;
-  max-height: 350px;
-  padding: 30px;
-  border-radius: 25%;
+  border: 1px solid rgba(218, 247, 255, 0.7);
+  border-radius: 50%;
+  display: block;
+  height: 230px;
+  object-fit: cover;
+  width: 230px;
 }
 
 #experience,
 #projects {
-  border: 1px solid aliceblue;
-  height: 100%;
-  padding: 12px;
-  border-radius: 1%;
-  margin-bottom: 500px;
+  border: 1px solid rgba(218, 247, 255, 0.48);
+  border-radius: 18px;
+  padding: 36px;
+  margin-bottom: 112px;
+  background: #006186;
 }
 
-#projects a,
-#about a {
+#client-work {
+  margin-bottom: 112px;
+}
+
+.section-heading {
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+.section-heading h2,
+#experience h2,
+#projects h2 {
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.eyebrow,
+.project-role,
+.card-topline,
+.tag-list {
+  color: #77e8ff;
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.primary-link,
+.text-link {
+  align-items: center;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.primary-link {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 16px;
+}
+
+.primary-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.text-link {
+  border-bottom: 1px solid #77e8ff;
+  color: #77e8ff;
+}
+
+.case-study-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.case-study-card {
+  background: #006186;
+  border: 1px solid #fffdf5;
+  color: #fffdf5;
+  min-height: 350px;
+  padding: 30px 30px 82px;
+  position: relative;
+}
+
+.truthseek-card {
+  background: #006186;
+  grid-column: 1 / -1;
+  min-height: 0;
+}
+
+.case-study-card h3 {
+  font-size: 1.8rem;
+  line-height: 1.15;
+  margin: 24px 0 6px;
+}
+
+.case-study-card .project-role,
+.case-study-card .card-topline,
+.case-study-card .tag-list {
+  color: #77e8ff;
+}
+
+.card-topline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.case-study-visual {
+  border: 1px solid #3b8895;
+  margin: 24px 0;
+}
+
+.case-study-visual img {
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+  border: 1px solid #fffdf5;
+}
+
+.case-study-visual figcaption {
+  font-size: 0.78rem;
+  padding: 6px 8px;
+}
+
+.feature-list {
+  padding-left: 20px;
+}
+
+.feature-list li {
+  margin-bottom: 7px;
+}
+
+.tag-list {
+  bottom: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  left: 30px;
+  position: absolute;
+}
+
+.tag-list span {
+  border: 1px solid currentColor;
+  padding: 2px 6px;
+}
+
+#projects a {
   text-decoration: none;
   color: aqua;
 }
@@ -109,4 +272,106 @@ body {
 .project-description,
 .experience-description {
   margin-left: 20px;
+}
+
+footer {
+  align-items: center;
+  border-top: 1px solid rgba(218, 247, 255, 0.35);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 28px 32px 42px;
+}
+
+footer a {
+  color: #77e8ff;
+  margin-left: 18px;
+}
+
+.skip-link {
+  background: #f0fbff;
+  color: #04344d;
+  left: 12px;
+  padding: 8px 12px;
+  position: fixed;
+  top: -50px;
+  z-index: 20;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    position: static;
+  }
+
+  .navlist {
+    padding-top: 0;
+  }
+
+  .navlist li {
+    display: inline-block;
+    padding: 4px 8px;
+  }
+
+  .navlist .resume-link {
+    margin: 0;
+  }
+
+  .content {
+    padding: 40px 18px 56px;
+  }
+
+  #about {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    padding: 28px;
+    margin-bottom: 72px;
+  }
+
+  .profile-pic {
+    height: 140px;
+    width: 140px;
+  }
+
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-card {
+    min-height: 0;
+    padding-bottom: 82px;
+  }
+
+  .truthseek-card {
+    grid-column: auto;
+  }
+
+  #client-work,
+  #experience,
+  #projects {
+    margin-bottom: 72px;
+  }
+
+  #experience,
+  #projects {
+    padding: 26px;
+  }
+
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 18px 32px;
+  }
+
+  footer a {
+    margin-left: 0;
+    margin-right: 18px;
+  }
 }

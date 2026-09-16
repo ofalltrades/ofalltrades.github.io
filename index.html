@@ -6,14 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Jake Johnson</title>
+    <meta
+      name="description"
+      content="Portfolio of Jake Johnson, a senior full-stack engineer building reliable Rails and React products."
+    />
+    <title>Jake Johnson — Senior Full-stack Engineer</title>
   </head>
   <body>
-    <div class="navbar">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="navbar">
       <div class="links">
         <ul>
           <li>
@@ -23,7 +28,7 @@
               target="_blank"
               rel="noreferrer"
               ><svg
-                class="github-icon"
+                class="github-icon feather feather-github"
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
                 viewBox="0 0 24 24"
@@ -32,7 +37,6 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-github"
               >
                 <title>GitHub</title>
                 <path
@@ -47,7 +51,7 @@
               target="_blank"
               rel="noreferrer"
               ><svg
-                class="linkedin-icon"
+                class="linkedin-icon feather feather-linkedin"
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
                 viewBox="0 0 24 24"
@@ -56,7 +60,6 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-linkedin"
               >
                 <title>LinkedIn</title>
                 <path
@@ -70,40 +73,35 @@
       </div>
       <ul class="navlist">
         <li><a href="#about">about</a></li>
+        <li><a href="#client-work">client work</a></li>
         <li><a href="#experience">experience</a></li>
-        <li><a href="#projects">projects</a></li>
         <li>
           <a class="resume-link" href="resume.pdf"
             ><span class="resume-link-border">Résumé</span></a
           >
         </li>
       </ul>
-    </div>
-    <div class="content">
+    </header>
+    <main id="main-content" class="content">
       <div id="about">
         <div class="intro-text">
+          <p class="eyebrow">Senior full-stack engineer</p>
+          <h1>Jake Johnson</h1>
           <p>
-            Hello,
+            I build durable, humane web applications for people doing real
+            work. I have more than a decade of experience across greenfield and
+            legacy systems, startups and enterprise teams.
             <br />
             <br />
-            I'm Jake Johnson, a software engineer with over a decade of
-            professional experience as a fullstack web developer. I am
-            experienced in scaling both greenfield and legacy systems in both
-            startup and enterprise environments. I am product-minded and
-            customer-focused, value cross-team collaboration, and love working
-            with good people in stimulating environments that are inclusive and
-            supportive.
-            <br />
-            <br />
-            I love new challenges and I love building new things. Check out my
-            <a href="#experience">experience</a> below, my
-            <a href="https://github.com/ofalltrades">GitHub</a> via the kitty
-            icon, and download my
-            <a class="resume-link" href="resume.pdf">résumé</a>.
-            <br />
-            <br />
-            And get in touch!
+            I am product-minded, customer-focused, and especially enjoy taking
+            an ambiguous workflow and making it reliable, understandable, and
+            safe. My recent work spans Rails, React, TypeScript, PostgreSQL,
+            payments, integrations, and internal tools.
           </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#client-work">See recent work</a>
+            <a class="text-link" href="resume.pdf">Download résumé</a>
+          </div>
         </div>
         <div>
           <img
@@ -113,6 +111,104 @@
           />
         </div>
       </div>
+      <section id="client-work" aria-labelledby="client-work-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Selected client work</p>
+          <h2 id="client-work-heading">Recent Rails applications</h2>
+          <p>
+            These are private client products, so the case studies focus on the
+            work and the systems rather than client data or source code.
+          </p>
+        </div>
+        <div class="case-study-grid">
+          <article class="case-study-card">
+            <div class="card-topline">
+              <span>01</span>
+              <span>Private client work</span>
+            </div>
+            <figure class="case-study-visual">
+              <img
+                src="images/zero-nexxus-sign-in.png"
+                alt="Zero Nexxus sign-in screen"
+              />
+              <figcaption>Zero Nexxus sign-in experience</figcaption>
+            </figure>
+            <h3>Zero Nexxus</h3>
+            <p class="project-role">Client operations platform</p>
+            <p>
+              A Rails and Inertia application for managing a sensitive
+              client-service workflow. I built and extended superadmin tools
+              for client profiles, onboarding, documents, tasks, scheduling,
+              and internal operations.
+            </p>
+            <ul class="feature-list">
+              <li>Role-aware client and administrative workflows</li>
+              <li>Calendly-backed call scheduling and completion history</li>
+              <li>Stripe, MFA, email, and document-management integrations</li>
+            </ul>
+            <div class="tag-list" aria-label="Technology used">
+              <span>Rails</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span>
+            </div>
+          </article>
+          <article class="case-study-card">
+            <div class="card-topline">
+              <span>02</span>
+              <span>Private client work</span>
+            </div>
+            <figure class="case-study-visual">
+              <img
+                src="images/portal-webinars.png"
+                alt="123CEU Portal superadmin view for scheduling and managing live webinars"
+              />
+              <figcaption>Live webinar management for administrators</figcaption>
+            </figure>
+            <h3>123CEU Portal</h3>
+            <p class="project-role">Education and webinar platform</p>
+            <p>
+              A full-stack training portal supporting course enrollment,
+              live webinars, payments, evaluations, and certificates. My work
+              has focused on reliable customer flows and high-risk boundaries
+              such as authorization, billing, and private webinar activity.
+            </p>
+            <ul class="feature-list">
+              <li>Live webinar workflows and producer–instructor collaboration</li>
+              <li>Post-webinar evaluations and certificate delivery</li>
+              <li>Checkout safeguards, payment lifecycle coverage, and CI gates</li>
+            </ul>
+            <div class="tag-list" aria-label="Technology used">
+              <span>Rails</span><span>React</span><span>Inertia</span><span>Stripe</span>
+            </div>
+          </article>
+          <article class="case-study-card truthseek-card">
+            <div class="card-topline">
+              <span>03</span>
+              <span>Independent product · in development</span>
+            </div>
+            <figure class="case-study-visual">
+              <img
+                src="images/truthseek-research-library.png"
+                alt="TruthSeek research library showing ranked paper results, review priorities, sources, and publication-year filters"
+              />
+              <figcaption>Research discovery with transparent ranking controls</figcaption>
+            </figure>
+            <h3>TruthSeek</h3>
+            <p class="project-role">Research discovery SaaS</p>
+            <p>
+              I’m building TruthSeek to help people search, evaluate, and
+              organize research papers with clearer controls over sources,
+              date ranges, and ranking criteria.
+            </p>
+            <ul class="feature-list">
+              <li>Research-paper search with source and date filters</li>
+              <li>Transparent controls for relevance, rigor, novelty, and transparency</li>
+              <li>Private-paper workflows with access and usage boundaries</li>
+            </ul>
+            <div class="tag-list" aria-label="Technology used">
+              <span>Next.js</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span>
+            </div>
+          </article>
+        </div>
+      </section>
       <div id="experience">
         <h2>Experience</h2>
         <div>
@@ -199,24 +295,12 @@
           </div>
         </div>
       </div>
-      <div id="projects">
-        <h2>A Few of My Projects</h2>
-        <div>
-          <p><b>Rails</b></p>
-          <div>
-            <p>
-              λ
-              <a href="https://github.com/ofalltrades/jakeblades.com">
-                My Bladesmithing Website
-              </a>
-            </p>
-            <p class="project-description">
-              I make knives. I also blacksmith. This site is my knife making
-              business, Jake Blades. The stack is React/Rails.
-            </p>
-          </div>
+      <!-- Retained for future public projects; hidden from the current portfolio. -->
+      <section id="projects" aria-labelledby="projects-heading" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Public work</p>
+          <h2 id="projects-heading">Selected independent projects</h2>
         </div>
-        <br />
         <div>
           <p><b>Node</b></p>
           <div>
@@ -264,6 +348,22 @@
         </div>
         <br />
         <div>
+          <p><b>Rails</b></p>
+          <div>
+            <p>
+              λ
+              <a href="https://github.com/ofalltrades/jakeblades.com">
+                My Bladesmithing Website
+              </a>
+            </p>
+            <p class="project-description">
+              I make knives. I also blacksmith. This site is my knife making
+              business, Jake Blades. The stack is React/Rails.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div>
           <p><b>Python</b></p>
           <div>
             <p>
@@ -278,8 +378,15 @@
             </p>
           </div>
         </div>
+      </section>
+    </main>
+    <footer>
+      <p>Jake Johnson · Senior full-stack engineer</p>
+      <div>
+        <a href="https://github.com/ofalltrades">GitHub</a>
+        <a href="https://www.linkedin.com/in/ofalltrades">LinkedIn</a>
       </div>
-    </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
