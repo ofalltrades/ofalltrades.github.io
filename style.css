@@ -207,6 +207,16 @@ p {
   margin: 24px 0 6px;
 }
 
+.case-study-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.case-study-card h3 a:hover,
+.case-study-card h3 a:focus-visible {
+  text-decoration: underline;
+}
+
 .case-study-card .project-role,
 .case-study-card .card-topline,
 .case-study-card .tag-list {
